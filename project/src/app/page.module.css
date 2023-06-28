@@ -21,20 +21,20 @@
 .img{
     width: 100%;
     height: 500px;
-    object-fit: cover;
+    object-fit: contain;
+    animation: move 3s infinite ease alternate; /*1st is name it could be anything and last is alternate so that when it ends it keeps on looping in animation*/
+}
+
+@keyframes move{
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
 }
 
 .dsec{
     font-size: 24px;
     font-weight: 300;
-}
-
-.button{
-    padding: 20px;
-    cursor: pointer;
-    background-color: #53c28b;
-    border: none;
-    border-radius: 5px;
-    width: max-content;
-    color: white;
 }
