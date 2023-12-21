@@ -17,7 +17,7 @@ const getData = (cat) =>{
 
 const Category = ({params}) => {
   
-  const data = getData(params.category);
+  const data = getData(params.category);  //because our folder name is category
 
   return (
     <div className={styles.container}>

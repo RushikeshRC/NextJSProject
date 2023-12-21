@@ -29,4 +29,4 @@ const postSchema = new Schema(
 );
 
 //if the post collection does not exists then create new one
-export default mongoose.Model.Post || mongoose.model("Post", postSchema);
+export default mongoose.models.Post || mongoose.model("Post", postSchema);
